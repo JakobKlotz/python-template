@@ -109,3 +109,7 @@ ENV/
 # IDE settings
 .vscode/
 .idea/
+
+# folders
+data/
+dev/
