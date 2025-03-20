@@ -23,14 +23,16 @@ and running for:
     - and a hook to keep the `uv.lock` up-to date
 - GitHub action to execute tests.
 
+... and the template let's you set the Python version.
+
+> [!NOTE]
+> A Python installation is *not* required. `uv` will install the appropriate Python version, if necessary.
+
 ## 1️⃣ Prerequisites
 
 As a prerequisite, you need to have [`uv`](https://docs.astral.sh/uv/)
 installed. Visit the installation [guide](https://docs.astral.sh/uv/getting-started/installation/)
 (it's really simple to set-up).
-
-> [!NOTE]
-> A Python installation is *not* required. `uv` will install 3.12, if necessary.
 
 With `uv`, install `pre-commit` and `cookiecutter` as tools.
 
