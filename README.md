@@ -47,7 +47,7 @@ That's it!
 Simply use:
 
 ```bash
-cookiecutter https://github.com/JakobKlotz/ds-template.git
+cookiecutter https://github.com/JakobKlotz/python-template.git
 ```
 
 ... which walks you through the set-up of your project. After the project 
