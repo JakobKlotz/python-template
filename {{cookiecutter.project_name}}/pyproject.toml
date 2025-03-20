@@ -1,22 +1,16 @@
-[tool.poetry]
+[project]
 name = "{{cookiecutter.project_slug}}"
-version = "{{cookiecutter.version}}"
-description = "{{cookiecutter.project_short_description}}"
+version = "0.1.0"
+description = "{{cookiecutter.project_description}}"
 readme = "README.md"
 authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+requires-python = ">={{cookiecutter.python_version}}"
+dependencies = []
 
-
-[tool.poetry.dependencies]
-python = "^3.12"
-
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
 
 [tool.ruff]
 line-length = 79
