@@ -1,7 +1,7 @@
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![License: MIT](https://img.shields.io/badge/license-MIT-blue)
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue)
 
-# Python project - Cookiecutter template
+# Python Project - Cookiecutter Template
 
 Opinionated Cookiecutter template for Python projects which uses `uv` to manage
 packages and Python installations. You can use the template to quickly get up
