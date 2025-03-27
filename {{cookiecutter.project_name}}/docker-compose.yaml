@@ -1,0 +1,6 @@
+# Modify to your liking
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
