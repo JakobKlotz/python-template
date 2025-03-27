@@ -10,6 +10,7 @@ and running for:
 - Python packaging
 - Machine Learning projects
 - Data analysis
+- Docker deployments
 - API development
 - Automation scripts
 - ...
@@ -22,11 +23,10 @@ and running for:
     - a hook to format and lint code with `ruff`
     - and a hook to keep the `uv.lock` up-to date
 - GitHub action to execute tests.
-
-... and the template let's you set the Python version.
+- [Optional] Docker template (with Python and `uv`)
 
 > [!NOTE]
-> A Python installation is *not* required. `uv` will install the appropriate Python version, if necessary.
+> The cookiecutter template let's YOU set the Python version! A Python installation is *not* required. `uv` will install the appropriate Python version, if necessary.
 
 ## 1️⃣ Prerequisites
 
@@ -44,7 +44,7 @@ That's it!
 
 ## 2️⃣ Usage
 
-Simply use:
+To use the cookiecutter template:
 
 ```bash
 cookiecutter https://github.com/JakobKlotz/python-template.git

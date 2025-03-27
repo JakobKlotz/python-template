@@ -1,12 +1,7 @@
-# Taken from https://github.com/audreyfeldroy/cookiecutter-pypackage/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/.gitignore
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
-*.so
 
 # Distribution / packaging
 .Python
@@ -110,6 +105,5 @@ ENV/
 .vscode/
 .idea/
 
-# folders
-data/
-dev/
+# .gitignore
+.gitignore
