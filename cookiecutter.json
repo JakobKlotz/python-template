@@ -1,6 +1,6 @@
 {
-  "full_name": "Your name: Firstname Lastname",
-  "email": "Your mail address",
+  "full_name": "Jakob Klotz",
+  "email": "jakob.klotz@mci.edu",
   "project_name": "my-project",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_description": "Short description of your project.",
