@@ -2,9 +2,9 @@
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=mit&logoColor=white)
 
-# Python Project - Cookiecutter Template
+# Template for Python Projects
 
-Opinionated Cookiecutter template for Python projects which uses `uv` to manage
+Opinionated cookiecutter template for Python projects which uses `uv` to manage
 packages and Python installations. You can use the template to quickly get up
 and running for:
 
@@ -15,6 +15,12 @@ and running for:
 - API development
 - Automation scripts
 - ...
+
+---
+
+<div align="center">
+    <img src="assets/template.gif" alt="GIF">
+</div>
 
 ## Comes with...
 
