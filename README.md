@@ -1,9 +1,10 @@
-![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=mit&logoColor=white)
 
-# Python Project - Cookiecutter Template
+# Template for Python Projects
 
-Opinionated Cookiecutter template for Python projects which uses `uv` to manage
+Opinionated cookiecutter template for Python projects which uses `uv` to manage
 packages and Python installations. You can use the template to quickly get up
 and running for:
 
@@ -15,13 +16,20 @@ and running for:
 - Automation scripts
 - ...
 
+---
+
+<div align="center">
+    <img src="assets/template.gif" alt="GIF">
+</div>
+
 ## Comes with...
 
 - `uv` to manage packages and Python installations
 - `pytest` for unit-testing
 - `pre-commit`:
-    - a hook to format and lint code with `ruff`
-    - and a hook to keep the `uv.lock` up-to date
+    - `ruff` hook to format and lint code
+    - `uv` hook to keep `uv.lock` up-to date
+    - `gitleaks` hook to prevent you from committing secrets (API keys, etc.)
 - GitHub action to execute tests.
 - [Optional] Docker template (with Python and `uv`)
 
