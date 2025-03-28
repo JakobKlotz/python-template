@@ -61,3 +61,8 @@ cookiecutter https://github.com/JakobKlotz/python-template.git
 ... which walks you through the set-up of your project. After the project 
 structure creation, the virtual environment and `pre-commit` hooks are 
 automatically installed. 🚀
+
+## Contributions
+
+Any contributions are welcome! 👋🏽 
+Check out [CONTRIBUTING.md](CONTRIBUTING.md)
