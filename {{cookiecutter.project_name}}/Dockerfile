@@ -1,7 +1,7 @@
 # Set-up uv and copy project files
 FROM python:{{cookiecutter.python_version}}-slim-bookworm
-# Pin uv version 0.6.10
-COPY --from=ghcr.io/astral-sh/uv:0.6.10 /uv /uvx /bin/
+# Pin uv version 0.6.14
+COPY --from=ghcr.io/astral-sh/uv:0.6.14 /uv /uvx /bin/
 
 WORKDIR /app
 
