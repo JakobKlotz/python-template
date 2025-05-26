@@ -1,7 +1,8 @@
 # Contributions
 
-I'm really glad, you found your way here. 👋🏽 Contributions are welcomed, 
-thank you in advance for improving the project!
+I'm really glad, you found your way here. 👋🏽 Contributions are highly
+appreciated and credit will always be given! Thank you in advance for improving
+the project! 😊
 
 ## How to contribute
 
