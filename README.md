@@ -26,11 +26,11 @@ and running for:
 
 - `uv` to manage packages and Python installations
 - `pytest` for unit-testing
-- `pre-commit`:
+- GitHub action to execute tests.
+- [Optional] `pre-commit`:
     - `ruff` hook to format and lint code
     - `uv` hook to keep `uv.lock` up-to date
     - `gitleaks` hook to prevent you from committing secrets (API keys, etc.)
-- GitHub action to execute tests.
 - [Optional] Docker template (with Python and `uv`)
 
 > [!NOTE]
