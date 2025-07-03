@@ -4,6 +4,7 @@
   "project_name": "my-project",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_description": "Short description of your project.",
-  "python_version": "3.12",
-  "use_docker": "n"
+  "python_version": ["3.13", "3.12", "3.11", "3.10", "3.9", "3.8", "3.7"],
+  "use_precommit": ["yes", "no"],
+  "use_docker": ["yes", "no"]
 }
