@@ -1,17 +1,39 @@
-# Set-up uv and copy project files
-FROM python:{{cookiecutter.python_version}}-slim-bookworm
-# Pin uv version 0.7.8
-COPY --from=ghcr.io/astral-sh/uv:0.7.19 /uv /uvx /bin/
+# Taken and modified from 
+# https://github.com/astral-sh/uv-docker-example/blob/main/standalone.Dockerfile
+
+# First, build the app
+FROM astral/uv:trixie-slim AS builder
+ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
+
+# Configure the Python directory so it is consistent
+ENV UV_PYTHON_INSTALL_DIR=/python
+
+# Only use the managed Python version
+ENV UV_PYTHON_PREFERENCE=only-managed
 
 WORKDIR /app
+RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=bind,source=uv.lock,target=uv.lock \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+    uv sync --locked --no-install-project --no-dev
+COPY . /app
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --locked --no-dev
 
-# Set-up the environment
-COPY pyproject.toml uv.lock /app/ 
-# Sync without updating the uv.lock file
-RUN uv sync --frozen
+# Final image
+FROM debian:trixie-slim
 
-# Copy all files
-COPY . /app/
+# Copy the Python version
+COPY --from=builder --chown=python:python /python /python
+
+# Copy the application from the builder
+COPY --from=builder --chown=app:app /app /app
+
+# Place executables in the environment at the front of the path
+ENV PATH="/app/.venv/bin:$PATH"
+
+# reset WORKDIR to the app directory
+WORKDIR /app
 
 # Modify this section to suit your specific project requirements.
 # For example, you may need to install additional dependencies or set
