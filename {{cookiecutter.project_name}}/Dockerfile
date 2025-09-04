@@ -35,8 +35,16 @@ ENV PATH="/app/.venv/bin:$PATH"
 # reset WORKDIR to the app directory
 WORKDIR /app
 
-# Modify this section to suit your specific project requirements.
-# For example, you may need to install additional dependencies or set
-# environment variables, etc.
+# ============================================================
+# TODO (REQUIRED): Customize this section before using the image
+# - Replace the placeholder CMD/ENTRYPOINT below with how your app is started.
+# - Set environment variables, EXPOSE ports, switch to non-root user, etc.
+# - Remove this block once you've configured the runtime command.
+# ============================================================
+#
+# Examples:
+#   Web (uvicorn):    CMD ["uvicorn", "myapp.main:app", "--host", "0.0.0.0", "--port", "8000"]
+#   Console module:   CMD ["python", "-m", "your_package"]
 
+# Placeholder, replace it with your actual command
 CMD []
