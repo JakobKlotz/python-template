@@ -1,3 +1,6 @@
+# This .gitignore belongs to the template. For project-specific ignores refer to
+# {{cookiecutter.project_name}}/.gitignore
+
 # IDE settings
 .vscode/
 .idea/
