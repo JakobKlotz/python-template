@@ -1,6 +1,17 @@
-# Modify to your liking
+# =============================================================================
+# TODO (REQUIRED): Customize this file before using docker-compose
+# =============================================================================
 services:
   app:
     build:
       context: .
       dockerfile: Dockerfile
+
+    # Example runtime settings (uncomment/edit as needed):
+    # ports:
+    #   - "8000:8000"
+    # environment:
+    #   - ENV=production
+    # volumes:
+    #   - ./:/app
+    # restart: unless-stopped
