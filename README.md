@@ -62,6 +62,16 @@ cookiecutter https://github.com/JakobKlotz/python-template.git
 structure creation, the virtual environment and `pre-commit` hooks are 
 automatically installed. 🚀
 
+## 3️⃣ [Optional] Run First Script
+
+To execute the pre-bundled script, simply use:
+
+```bash
+uv run main.py
+```
+
+The script just prints the current Python version.
+
 ## Contributions
 
 Any contributions are welcome! 👋🏽 
